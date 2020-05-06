@@ -1,0 +1,15 @@
+<div class="bg-danger text-red">
+  <h1>Bmi Calculator</h1>
+</div>
+<form>
+  <label for="centimeters">Height: centimeters</label>
+  <input [(ngModel)]='centimeters' type="number " id='centimeters' name='centimeters'>
+  <br/>
+
+<label for="kilograms">Weight: kilograms</label>
+  <input [(ngModel)]='kilograms' type="number" id='kilograms' name='kilograms'
+  ><br/>
+
+    <button (click)="calculate()" type="button" class="btn btn-danger">calculate</button>
+      <div>{{calresult}}</div>
+    </form>
